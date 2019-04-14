@@ -1,0 +1,39 @@
+//mixin for 1024px media query
+
+@mixin medium {
+
+    @media only screen and (max-width: 1024px) {
+      body { margin: 0; padding: 0; background-color:$primary_color; background-image: none; }
+      #wrapper {  width: 100%; min-width: 0; margin: 0; padding: 0; box-shadow: none; border-radius: 0; border-style: none; }
+      header { background-image: url(../images/primemobile.gif); 
+             background-repeat: no-repeat;
+             text-shadow: 1px 1px 1px #000033;
+             height: 100%; }
+      h1 { margin: 0; padding-left: 2em; 
+           text-indent: 0; font-size: 3.7em; white-space: normal;  }
+      nav { float: none; width: auto; margin-top: 0.5em; }
+      nav a { padding: 0.2em; margin-left: 0.3em; float: left; width: 20%; }
+      main { padding: 2.5em 1em ; margin: 0; font-size: 90%; clear: both; }
+    }
+}
+
+
+//mixin for 768px media query
+
+@mixin small {
+
+    @media only screen and (max-width: 768px) {
+      h1  { padding-top: 0.25em; padding-left: 1.5em; font-size: 2.4em;
+      }
+      nav { width: 98%; }
+      nav a { padding: 0.5em; width: 40%; float: left; min-width: 5em; margin-left: 0.5em; }
+      main { padding: 0.6em;}
+      .floatleft { float: none; padding-right: 0; padding-bottom: 0; }
+      h3 { padding-top: 0; margin: 0; }
+      dd { line-height: 100%; }
+      footer { padding: 0.5em; margin: 0; }
+      #mobile { display: inline; }
+     #desktop { display: none; }
+     }
+ 
+ }
